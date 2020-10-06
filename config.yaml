@@ -2,5 +2,7 @@ module:
   imports:
     - path: github.com/mathjax/MathJax
       mounts:
-        source: es5
-        target: assets/mod/mathjax
+        - source: es5
+          target: assets/mod/mathjax
+        - source: es5/output
+          target: static/mod/mathjax/output
